@@ -1,9 +1,13 @@
-//: Playground - noun: a place where people can play
+//
+//  wallet.swift
+//  EVA Wallet
+//
+//  Created by Charlie Morris on 2016-09-08.
+//  Copyright © 2016 Flailing Whale. All rights reserved.
+//
 
+import Foundation
 import UIKit
-
-var str = "Hello, playground"
-
 
 struct Wallet {
     var name: String
@@ -36,14 +40,3 @@ struct Wallet {
         self.balance = balance - subtractAmount
     }
 }
-
-
-
-var wallet1 = Wallet(name: "Chuck's", balance: 0.0)
-
-wallet1.addFunds(addAmount: 2.1)
-wallet1.addFunds(addAmount: 2.1)
-print(wallet1.balance)
-
-wallet1.subtractFunds(subtractAmount: 1.1)
-print(wallet1.balance)

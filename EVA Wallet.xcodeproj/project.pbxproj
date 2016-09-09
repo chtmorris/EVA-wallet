@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E401D59007A00B5027E /* AppDelegate.swift */; };
+		EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E421D59007A00B5027E /* EVAWalletsVC.swift */; };
+		EC328E461D59007A00B5027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC328E441D59007A00B5027E /* Main.storyboard */; };
+		EC328E481D59007A00B5027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC328E471D59007A00B5027E /* Assets.xcassets */; };
+		EC328E4B1D59007A00B5027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC328E491D59007A00B5027E /* LaunchScreen.storyboard */; };
+		EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */; };
+		EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */; };
+		ECE3630C1D816ED70003F724 /* wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3630B1D816ED70003F724 /* wallet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC328E3D1D59007A00B5027E /* EVA Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVA Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC328E401D59007A00B5027E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC328E421D59007A00B5027E /* EVAWalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVAWalletsVC.swift; sourceTree = "<group>"; };
+		EC328E451D59007A00B5027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC328E471D59007A00B5027E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC328E4A1D59007A00B5027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC328E4C1D59007A00B5027E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EVAWalletsVC+CollectionView.swift"; sourceTree = "<group>"; };
+		EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletsCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECE3630B1D816ED70003F724 /* wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wallet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC328E3A1D59007A00B5027E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC328E341D59007A00B5027E = {
+			isa = PBXGroup;
+			children = (
+				EC328E3F1D59007A00B5027E /* EVA Wallet */,
+				EC328E3E1D59007A00B5027E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC328E3E1D59007A00B5027E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC328E3D1D59007A00B5027E /* EVA Wallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC328E3F1D59007A00B5027E /* EVA Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				EC328E401D59007A00B5027E /* AppDelegate.swift */,
+				ECE3630A1D816EAB0003F724 /* Models */,
+				EC328E521D590A5D00B5027E /* ViewControllers */,
+				EC328E441D59007A00B5027E /* Main.storyboard */,
+				EC328E491D59007A00B5027E /* LaunchScreen.storyboard */,
+				EC328E471D59007A00B5027E /* Assets.xcassets */,
+				EC328E4C1D59007A00B5027E /* Info.plist */,
+			);
+			path = "EVA Wallet";
+			sourceTree = "<group>";
+		};
+		EC328E521D590A5D00B5027E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC328E421D59007A00B5027E /* EVAWalletsVC.swift */,
+				EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */,
+				EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECE3630A1D816EAB0003F724 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECE3630B1D816ED70003F724 /* wallet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC328E3C1D59007A00B5027E /* EVA Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC328E4F1D59007A00B5027E /* Build configuration list for PBXNativeTarget "EVA Wallet" */;
+			buildPhases = (
+				EC328E391D59007A00B5027E /* Sources */,
+				EC328E3A1D59007A00B5027E /* Frameworks */,
+				EC328E3B1D59007A00B5027E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EVA Wallet";
+			productName = "EVA Wallet";
+			productReference = EC328E3D1D59007A00B5027E /* EVA Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC328E351D59007A00B5027E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Flailing Whale";
+				TargetAttributes = {
+					EC328E3C1D59007A00B5027E = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = EC328E381D59007A00B5027E /* Build configuration list for PBXProject "EVA Wallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC328E341D59007A00B5027E;
+			productRefGroup = EC328E3E1D59007A00B5027E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC328E3C1D59007A00B5027E /* EVA Wallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC328E3B1D59007A00B5027E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC328E4B1D59007A00B5027E /* LaunchScreen.storyboard in Resources */,
+				EC328E481D59007A00B5027E /* Assets.xcassets in Resources */,
+				EC328E461D59007A00B5027E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC328E391D59007A00B5027E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */,
+				ECE3630C1D816ED70003F724 /* wallet.swift in Sources */,
+				EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */,
+				EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */,
+				EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC328E441D59007A00B5027E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC328E451D59007A00B5027E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC328E491D59007A00B5027E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC328E4A1D59007A00B5027E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC328E4D1D59007A00B5027E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC328E4E1D59007A00B5027E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC328E501D59007A00B5027E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EVA Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flailingwhale.EVA-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC328E511D59007A00B5027E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "EVA Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flailingwhale.EVA-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC328E381D59007A00B5027E /* Build configuration list for PBXProject "EVA Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC328E4D1D59007A00B5027E /* Debug */,
+				EC328E4E1D59007A00B5027E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC328E4F1D59007A00B5027E /* Build configuration list for PBXNativeTarget "EVA Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC328E501D59007A00B5027E /* Debug */,
+				EC328E511D59007A00B5027E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC328E351D59007A00B5027E /* Project object */;
+}
