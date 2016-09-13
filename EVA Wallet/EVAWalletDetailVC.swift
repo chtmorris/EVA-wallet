@@ -11,7 +11,7 @@ import UIKit
 class EVAWalletDetailVC: UIViewController {
     
     var walletFromCollectionView: String!
-
+    
     @IBOutlet weak var walletTitle: UILabel!
     
     override func viewDidLoad() {
@@ -27,11 +27,9 @@ class EVAWalletDetailVC: UIViewController {
             return true
         }
     }
-
+    
     @IBAction func backButtonTapped(_ sender: UIButton) {
-//        let unwindedSegue = UIStoryboardSegue(identifier: "toDetailWallet", source: EVAWalletsVC as! UIViewController, destination: EVAWalletDetailVC)
-//        unwind(for: "toWalletDetail", towardsViewController: EVAWalletsVC)
+        dismiss(animated: true, completion: nil)
     }
-    
-    
+
 }
