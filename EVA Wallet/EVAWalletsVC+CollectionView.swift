@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension WalletsVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension EVAWalletsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
@@ -27,6 +27,21 @@ extension WalletsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let cell = collectionView.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? EVAWalletDetailVC {
+            
+            let cell = sender as! UICollectionViewCell
+            let indexPath = self.collectionView!.indexPath(for: cell)
+            
+            vc.walletFromCollectionView = "\(indexPath?.row)"
+
+        }
     }
     
 }
