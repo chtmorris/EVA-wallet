@@ -10,7 +10,7 @@
         <!--WalletsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EVAWalletsVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalletsVC" id="BYZ-38-t0r" customClass="EVAWalletsVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -149,8 +149,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="45G-jS-Wo4"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteLine" translatesAutoresizingMaskIntoConstraints="NO" id="o3J-io-9W7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="t44-U6-Rjy"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ether 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-3p-HsL">
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBw-OB-wBo">
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ETH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drh-ZR-gIu">
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCv-DT-dtQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167.5" id="xcL-Qy-FT3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -162,18 +185,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" image="BackButton"/>
                                 <connections>
-                                    <action selector="backButtonTapped:" destination="TXg-vd-udf" eventType="touchUpInside" id="nkl-YM-QZl"/>
+                                    <action selector="backButtonTapped:" destination="TXg-vd-udf" eventType="touchUpInside" id="MNl-zv-Kan"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmb-d6-VpV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="om6-Qf-ZYY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="48"/>
+                                <color key="textColor" red="0.16862745579999999" green="0.97254908080000002" blue="0.76862752440000004" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="cBw-OB-wBo" secondAttribute="trailing" constant="-131" id="0AK-fU-m83"/>
                             <constraint firstAttribute="trailing" secondItem="45G-jS-Wo4" secondAttribute="trailing" id="44b-eA-R5x"/>
                             <constraint firstItem="Zq0-3p-HsL" firstAttribute="centerX" secondItem="y43-KO-kin" secondAttribute="centerX" id="4am-JQ-0SW"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="top" secondItem="o3J-io-9W7" secondAttribute="bottom" constant="-205" id="7xQ-8R-KFl"/>
                             <constraint firstItem="Zq0-3p-HsL" firstAttribute="top" secondItem="8cP-qz-P5o" secondAttribute="bottom" constant="18" id="AgI-M0-Zlc"/>
+                            <constraint firstItem="drh-ZR-gIu" firstAttribute="leading" secondItem="SCv-DT-dtQ" secondAttribute="trailing" constant="23.5" id="FNs-Y5-Rlh"/>
                             <constraint firstItem="45G-jS-Wo4" firstAttribute="top" secondItem="K9b-hO-LZh" secondAttribute="bottom" constant="-50" id="K9Y-7S-mHM"/>
+                            <constraint firstItem="o3J-io-9W7" firstAttribute="leading" secondItem="y43-KO-kin" secondAttribute="leadingMargin" constant="7" id="M0S-T6-vIG"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="Hmb-d6-VpV" secondAttribute="trailing" constant="-120" id="Pqz-GN-Mf7"/>
+                            <constraint firstItem="drh-ZR-gIu" firstAttribute="baseline" secondItem="SCv-DT-dtQ" secondAttribute="baseline" id="c6X-HO-jKp"/>
+                            <constraint firstItem="SCv-DT-dtQ" firstAttribute="centerX" secondItem="y43-KO-kin" secondAttribute="centerX" id="gF7-fG-dVt"/>
                             <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="y43-KO-kin" secondAttribute="leading" id="gS8-QS-OUd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o3J-io-9W7" secondAttribute="trailing" constant="7" id="j42-op-I0T"/>
                             <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="K9b-hO-LZh" secondAttribute="trailing" constant="-22" id="kvY-yF-5dt"/>
+                            <constraint firstItem="Hmb-d6-VpV" firstAttribute="top" secondItem="cBw-OB-wBo" secondAttribute="bottom" constant="22" id="lLx-xP-ts7"/>
+                            <constraint firstItem="cBw-OB-wBo" firstAttribute="top" secondItem="SCv-DT-dtQ" secondAttribute="bottom" constant="20" id="sM2-8E-8Dz"/>
+                            <constraint firstItem="SCv-DT-dtQ" firstAttribute="top" secondItem="Zq0-3p-HsL" secondAttribute="bottom" constant="24" id="vPd-RJ-WvA"/>
                             <constraint firstItem="4zS-1M-L6M" firstAttribute="top" secondItem="45G-jS-Wo4" secondAttribute="bottom" id="vqG-1K-a9Z"/>
                             <constraint firstItem="45G-jS-Wo4" firstAttribute="top" secondItem="y43-KO-kin" secondAttribute="top" id="wPc-u0-gyG"/>
                         </constraints>
@@ -184,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNB-U7-wyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248.8" y="450.22488755622192"/>
+            <point key="canvasLocation" x="1234" y="451"/>
         </scene>
     </scenes>
     <resources>

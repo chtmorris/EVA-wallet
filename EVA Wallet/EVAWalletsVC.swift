@@ -26,6 +26,5 @@ class EVAWalletsVC: UIViewController {
             return true
         }  
     }
-
-
+    
 }
