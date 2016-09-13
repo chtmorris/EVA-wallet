@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E401D59007A00B5027E /* AppDelegate.swift */; };
 		EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E421D59007A00B5027E /* EVAWalletsVC.swift */; };
-		EC328E461D59007A00B5027E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC328E441D59007A00B5027E /* Main.storyboard */; };
 		EC328E481D59007A00B5027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC328E471D59007A00B5027E /* Assets.xcassets */; };
 		EC328E4B1D59007A00B5027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC328E491D59007A00B5027E /* LaunchScreen.storyboard */; };
 		EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */; };
 		EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */; };
+		ECB613C81D86BE24002CAC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB613C61D86BE24002CAC53 /* Main.storyboard */; };
+		ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */; };
 		ECE3630C1D816ED70003F724 /* wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3630B1D816ED70003F724 /* wallet.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +22,13 @@
 		EC328E3D1D59007A00B5027E /* EVA Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVA Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC328E401D59007A00B5027E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC328E421D59007A00B5027E /* EVAWalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVAWalletsVC.swift; sourceTree = "<group>"; };
-		EC328E451D59007A00B5027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC328E471D59007A00B5027E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC328E4A1D59007A00B5027E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC328E4C1D59007A00B5027E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EVAWalletsVC+CollectionView.swift"; sourceTree = "<group>"; };
 		EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletsCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB613C71D86BE24002CAC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletDetailVC.swift; sourceTree = "<group>"; };
 		ECE3630B1D816ED70003F724 /* wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wallet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,8 +65,8 @@
 				EC328E401D59007A00B5027E /* AppDelegate.swift */,
 				ECE3630A1D816EAB0003F724 /* Models */,
 				EC328E521D590A5D00B5027E /* ViewControllers */,
-				EC328E441D59007A00B5027E /* Main.storyboard */,
 				EC328E491D59007A00B5027E /* LaunchScreen.storyboard */,
+				ECB613C61D86BE24002CAC53 /* Main.storyboard */,
 				EC328E471D59007A00B5027E /* Assets.xcassets */,
 				EC328E4C1D59007A00B5027E /* Info.plist */,
 			);
@@ -74,11 +76,28 @@
 		EC328E521D590A5D00B5027E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECBA909B1D86B44900BD2CD8 /* Wallets */,
+				ECBA909C1D86B45B00BD2CD8 /* WalletDetail */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECBA909B1D86B44900BD2CD8 /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
 				EC328E421D59007A00B5027E /* EVAWalletsVC.swift */,
 				EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */,
 				EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */,
 			);
-			name = ViewControllers;
+			name = Wallets;
+			sourceTree = "<group>";
+		};
+		ECBA909C1D86B45B00BD2CD8 /* WalletDetail */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */,
+			);
+			name = WalletDetail;
 			sourceTree = "<group>";
 		};
 		ECE3630A1D816EAB0003F724 /* Models */ = {
@@ -148,9 +167,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB613C81D86BE24002CAC53 /* Main.storyboard in Resources */,
 				EC328E4B1D59007A00B5027E /* LaunchScreen.storyboard in Resources */,
 				EC328E481D59007A00B5027E /* Assets.xcassets in Resources */,
-				EC328E461D59007A00B5027E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +183,7 @@
 				EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */,
 				ECE3630C1D816ED70003F724 /* wallet.swift in Sources */,
 				EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */,
+				ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */,
 				EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */,
 				EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */,
 			);
@@ -172,20 +192,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC328E441D59007A00B5027E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC328E451D59007A00B5027E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC328E491D59007A00B5027E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EC328E4A1D59007A00B5027E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECB613C61D86BE24002CAC53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB613C71D86BE24002CAC53 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

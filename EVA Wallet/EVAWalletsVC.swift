@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WalletsVC: UIViewController {
+class EVAWalletsVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -19,16 +19,13 @@ class WalletsVC: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    override var prefersStatusBarHidden: Bool {
+        get {
+            return true
+        }  
     }
-    
-    
-    //override func prefersStatusBarHidden() -> Bool {
-    //  return true
-    //}
 
 
 }

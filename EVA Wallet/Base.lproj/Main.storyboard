@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -10,7 +10,7 @@
         <!--WalletsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WalletsVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EVAWalletsVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -103,6 +103,7 @@
                                         <connections>
                                             <outlet property="walletBalance" destination="yHa-WV-YKv" id="R7r-pG-xtn"/>
                                             <outlet property="walletName" destination="gxo-em-qzg" id="mPa-Wa-lYx"/>
+                                            <segue destination="TXg-vd-udf" kind="presentation" modalTransitionStyle="flipHorizontal" id="4PM-1q-cNY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -135,8 +136,59 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="451.12443778110946"/>
         </scene>
+        <!--Wallet DetailVC-->
+        <scene sceneID="Coa-QJ-Dmv">
+            <objects>
+                <viewController storyboardIdentifier="walletDetail" id="TXg-vd-udf" customClass="EVAWalletDetailVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8cP-qz-P5o"/>
+                        <viewControllerLayoutGuide type="bottom" id="4zS-1M-L6M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y43-KO-kin">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="45G-jS-Wo4"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ether 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-3p-HsL">
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9b-hO-LZh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7dz-xn-zcg"/>
+                                    <constraint firstAttribute="width" constant="8" id="dMU-qx-c0t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" image="BackButton"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="TXg-vd-udf" eventType="touchUpInside" id="nkl-YM-QZl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="45G-jS-Wo4" secondAttribute="trailing" id="44b-eA-R5x"/>
+                            <constraint firstItem="Zq0-3p-HsL" firstAttribute="centerX" secondItem="y43-KO-kin" secondAttribute="centerX" id="4am-JQ-0SW"/>
+                            <constraint firstItem="Zq0-3p-HsL" firstAttribute="top" secondItem="8cP-qz-P5o" secondAttribute="bottom" constant="18" id="AgI-M0-Zlc"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="top" secondItem="K9b-hO-LZh" secondAttribute="bottom" constant="-50" id="K9Y-7S-mHM"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="y43-KO-kin" secondAttribute="leading" id="gS8-QS-OUd"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="leading" secondItem="K9b-hO-LZh" secondAttribute="trailing" constant="-22" id="kvY-yF-5dt"/>
+                            <constraint firstItem="4zS-1M-L6M" firstAttribute="top" secondItem="45G-jS-Wo4" secondAttribute="bottom" id="vqG-1K-a9Z"/>
+                            <constraint firstItem="45G-jS-Wo4" firstAttribute="top" secondItem="y43-KO-kin" secondAttribute="top" id="wPc-u0-gyG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="walletTitle" destination="Zq0-3p-HsL" id="Guf-FU-p7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNB-U7-wyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248.8" y="450.22488755622192"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BackButton" width="13" height="30"/>
         <image name="background" width="375" height="667"/>
         <image name="hamburger" width="33" height="24"/>
         <image name="whiteLine" width="326" height="1"/>

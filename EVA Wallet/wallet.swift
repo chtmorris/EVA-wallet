@@ -18,6 +18,11 @@ struct Wallet {
         self.balance = balance
     }
     
+    
+    // =======
+    // METHODS
+    // =======
+    
     mutating func addFunds(addAmount: Double) {
         guard addAmount > 0 else {
             print("Must add more than 0.0 ETH")
