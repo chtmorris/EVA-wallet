@@ -39,6 +39,9 @@
                                         <state key="normal" title="CREATE WALLET">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="QSd-a7-cgq" kind="show" id="1QN-pz-FCT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.089999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,6 +138,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="451.12443778110946"/>
+        </scene>
+        <!--Create WalletVC-->
+        <scene sceneID="eLy-0N-YqZ">
+            <objects>
+                <viewController id="QSd-a7-cgq" customClass="EVACreateWalletVC" customModule="EVA_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Jb-Jc-yXT"/>
+                        <viewControllerLayoutGuide type="bottom" id="E5k-mj-3l8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tVy-hd-hXG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Y2a-u6-7ed"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCC-Fx-4XR">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UCC-Fx-4XR" firstAttribute="leading" secondItem="Y2a-u6-7ed" secondAttribute="trailing" constant="-336" id="AYR-Ei-dVf"/>
+                            <constraint firstItem="UCC-Fx-4XR" firstAttribute="centerX" secondItem="tVy-hd-hXG" secondAttribute="centerX" id="CEZ-N3-dwE"/>
+                            <constraint firstItem="Y2a-u6-7ed" firstAttribute="top" secondItem="tVy-hd-hXG" secondAttribute="top" id="ch6-js-IxK"/>
+                            <constraint firstItem="UCC-Fx-4XR" firstAttribute="leading" secondItem="Y2a-u6-7ed" secondAttribute="trailing" constant="-336" id="eUb-Y1-Ldw"/>
+                            <constraint firstItem="E5k-mj-3l8" firstAttribute="top" secondItem="Y2a-u6-7ed" secondAttribute="bottom" id="elr-c7-OnV"/>
+                            <constraint firstItem="Y2a-u6-7ed" firstAttribute="leading" secondItem="tVy-hd-hXG" secondAttribute="leading" constant="-4" id="v3K-AZ-cII"/>
+                            <constraint firstItem="UCC-Fx-4XR" firstAttribute="centerY" secondItem="tVy-hd-hXG" secondAttribute="centerY" constant="-150" id="xbd-kJ-yFZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Y2a-u6-7ed" secondAttribute="trailing" constant="-4" id="yJh-M5-5cb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="UCC-Fx-4XR" id="Rrb-4i-0DE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsd-qk-Etg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416.80000000000001" y="1145.577211394303"/>
         </scene>
         <!--Wallet DetailVC-->
         <scene sceneID="Coa-QJ-Dmv">

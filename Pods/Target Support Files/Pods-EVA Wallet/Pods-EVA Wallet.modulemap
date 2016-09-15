@@ -1,0 +1,6 @@
+framework module Pods_EVA_Wallet {
+  umbrella header "Pods-EVA Wallet-umbrella.h"
+
+  export *
+  module * { export * }
+}

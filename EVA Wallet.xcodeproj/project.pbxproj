@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B88D42812183A160CFCDA4DF /* Pods_EVA_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187CC7C5AF82827D2C59939B /* Pods_EVA_Wallet.framework */; };
 		EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E401D59007A00B5027E /* AppDelegate.swift */; };
 		EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E421D59007A00B5027E /* EVAWalletsVC.swift */; };
 		EC328E481D59007A00B5027E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC328E471D59007A00B5027E /* Assets.xcassets */; };
 		EC328E4B1D59007A00B5027E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC328E491D59007A00B5027E /* LaunchScreen.storyboard */; };
 		EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */; };
 		EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */; };
+		EC3363801D87F9D500DDF7C7 /* EVACreateWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33637F1D87F9D500DDF7C7 /* EVACreateWalletVC.swift */; };
 		ECB613C81D86BE24002CAC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB613C61D86BE24002CAC53 /* Main.storyboard */; };
 		ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */; };
-		ECE3630C1D816ED70003F724 /* wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3630B1D816ED70003F724 /* wallet.swift */; };
+		ECE3630C1D816ED70003F724 /* EVAWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3630B1D816ED70003F724 /* EVAWalletModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187CC7C5AF82827D2C59939B /* Pods_EVA_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVA_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3853D3569CF92C899C62C9EF /* Pods-EVA Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVA Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVA Wallet/Pods-EVA Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		99155A6C8712D06C3A9A27C5 /* Pods-EVA Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVA Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVA Wallet/Pods-EVA Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 		EC328E3D1D59007A00B5027E /* EVA Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVA Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC328E401D59007A00B5027E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC328E421D59007A00B5027E /* EVAWalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVAWalletsVC.swift; sourceTree = "<group>"; };
@@ -27,9 +32,10 @@
 		EC328E4C1D59007A00B5027E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EVAWalletsVC+CollectionView.swift"; sourceTree = "<group>"; };
 		EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC33637F1D87F9D500DDF7C7 /* EVACreateWalletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVACreateWalletVC.swift; sourceTree = "<group>"; };
 		ECB613C71D86BE24002CAC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletDetailVC.swift; sourceTree = "<group>"; };
-		ECE3630B1D816ED70003F724 /* wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wallet.swift; sourceTree = "<group>"; };
+		ECE3630B1D816ED70003F724 /* EVAWalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88D42812183A160CFCDA4DF /* Pods_EVA_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		413B8938DB560C3AE23F0F86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99155A6C8712D06C3A9A27C5 /* Pods-EVA Wallet.debug.xcconfig */,
+				3853D3569CF92C899C62C9EF /* Pods-EVA Wallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7DB09B5FD99F67572E7740B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				187CC7C5AF82827D2C59939B /* Pods_EVA_Wallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC328E341D59007A00B5027E = {
 			isa = PBXGroup;
 			children = (
 				EC328E3F1D59007A00B5027E /* EVA Wallet */,
 				EC328E3E1D59007A00B5027E /* Products */,
+				413B8938DB560C3AE23F0F86 /* Pods */,
+				D7DB09B5FD99F67572E7740B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,10 +102,19 @@
 		EC328E521D590A5D00B5027E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EC3363811D87F9DD00DDF7C7 /* CreateWallet */,
 				ECBA909B1D86B44900BD2CD8 /* Wallets */,
 				ECBA909C1D86B45B00BD2CD8 /* WalletDetail */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC3363811D87F9DD00DDF7C7 /* CreateWallet */ = {
+			isa = PBXGroup;
+			children = (
+				EC33637F1D87F9D500DDF7C7 /* EVACreateWalletVC.swift */,
+			);
+			name = CreateWallet;
 			sourceTree = "<group>";
 		};
 		ECBA909B1D86B44900BD2CD8 /* Wallets */ = {
@@ -103,7 +138,7 @@
 		ECE3630A1D816EAB0003F724 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ECE3630B1D816ED70003F724 /* wallet.swift */,
+				ECE3630B1D816ED70003F724 /* EVAWalletModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -115,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC328E4F1D59007A00B5027E /* Build configuration list for PBXNativeTarget "EVA Wallet" */;
 			buildPhases = (
+				D39B7B23E5E22659959ED171 /* [CP] Check Pods Manifest.lock */,
 				EC328E391D59007A00B5027E /* Sources */,
 				EC328E3A1D59007A00B5027E /* Frameworks */,
 				EC328E3B1D59007A00B5027E /* Resources */,
+				B5D94C54FCE8D32BAFEB9C7E /* [CP] Embed Pods Frameworks */,
+				B077B3EDDBA3948995CD5422 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +214,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B077B3EDDBA3948995CD5422 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EVA Wallet/Pods-EVA Wallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D94C54FCE8D32BAFEB9C7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EVA Wallet/Pods-EVA Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D39B7B23E5E22659959ED171 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC328E391D59007A00B5027E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */,
-				ECE3630C1D816ED70003F724 /* wallet.swift in Sources */,
+				ECE3630C1D816ED70003F724 /* EVAWalletModel.swift in Sources */,
 				EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */,
+				EC3363801D87F9D500DDF7C7 /* EVACreateWalletVC.swift in Sources */,
 				ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */,
 				EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */,
 				EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */,
@@ -302,6 +389,7 @@
 		};
 		EC328E501D59007A00B5027E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99155A6C8712D06C3A9A27C5 /* Pods-EVA Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79HLANPT5D;
@@ -315,6 +403,7 @@
 		};
 		EC328E511D59007A00B5027E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3853D3569CF92C899C62C9EF /* Pods-EVA Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 79HLANPT5D;

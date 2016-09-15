@@ -18,6 +18,14 @@ class EVAWalletsVC: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let defaults = UserDefaults.standard
+        
+        guard defaults.object(forKey: "wallets") != nil else {
+            return
+        }
+        let wallets = defaults.object(forKey: "wallets") as! [Wallet]
+        print(wallets)
     }
     
     
@@ -26,5 +34,7 @@ class EVAWalletsVC: UIViewController {
             return true
         }  
     }
+    
+    
     
 }
