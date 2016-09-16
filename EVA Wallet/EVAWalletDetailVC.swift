@@ -10,14 +10,26 @@ import UIKit
 
 class EVAWalletDetailVC: UIViewController {
     
-    var walletFromCollectionView: String!
+    var walletFromCollectionView: Wallet!
     
     @IBOutlet weak var walletTitle: UILabel!
+    @IBOutlet weak var walletAmount: UILabel!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    // =========
+    // LIFECYCLE
+    // =========
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        walletTitle.text = walletFromCollectionView
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        walletTitle.text = walletFromCollectionView.name
+        walletAmount.text = "\(walletFromCollectionView.balance)"
 
         // Do any additional setup after loading the view.
     }
@@ -28,8 +40,14 @@ class EVAWalletDetailVC: UIViewController {
         }
     }
     
+    
+    // =======
+    // ACTIONS
+    // =======
+    
     @IBAction func backButtonTapped(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
 
 }
+
