@@ -15,8 +15,11 @@
 		EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */; };
 		EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */; };
 		EC3363801D87F9D500DDF7C7 /* EVACreateWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33637F1D87F9D500DDF7C7 /* EVACreateWalletVC.swift */; };
+		EC570E121D8B73200012118C /* EVAWalletDetailVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570E111D8B73200012118C /* EVAWalletDetailVC+CollectionView.swift */; };
+		EC570E141D8B738B0012118C /* EVAWalletDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC570E131D8B738B0012118C /* EVAWalletDetailCollectionViewCell.swift */; };
 		ECB613C81D86BE24002CAC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB613C61D86BE24002CAC53 /* Main.storyboard */; };
 		ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */; };
+		ECDC02641D8BA3840066DF90 /* EVARecieveEtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC02631D8BA3840066DF90 /* EVARecieveEtherVC.swift */; };
 		ECE3630C1D816ED70003F724 /* EVAWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE3630B1D816ED70003F724 /* EVAWalletModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +36,11 @@
 		EC328E531D590D9400B5027E /* EVAWalletsVC+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EVAWalletsVC+CollectionView.swift"; sourceTree = "<group>"; };
 		EC328E551D590FA100B5027E /* EVAWalletsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC33637F1D87F9D500DDF7C7 /* EVACreateWalletVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVACreateWalletVC.swift; sourceTree = "<group>"; };
+		EC570E111D8B73200012118C /* EVAWalletDetailVC+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EVAWalletDetailVC+CollectionView.swift"; sourceTree = "<group>"; };
+		EC570E131D8B738B0012118C /* EVAWalletDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		ECB613C71D86BE24002CAC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletDetailVC.swift; sourceTree = "<group>"; };
+		ECDC02631D8BA3840066DF90 /* EVARecieveEtherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVARecieveEtherVC.swift; sourceTree = "<group>"; };
 		ECE3630B1D816ED70003F724 /* EVAWalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVAWalletModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +108,7 @@
 		EC328E521D590A5D00B5027E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECDC02621D8BA35B0066DF90 /* ReceiveEther */,
 				EC3363811D87F9DD00DDF7C7 /* CreateWallet */,
 				ECBA909B1D86B44900BD2CD8 /* Wallets */,
 				ECBA909C1D86B45B00BD2CD8 /* WalletDetail */,
@@ -131,8 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				ECBA90991D869AB600BD2CD8 /* EVAWalletDetailVC.swift */,
+				EC570E111D8B73200012118C /* EVAWalletDetailVC+CollectionView.swift */,
+				EC570E131D8B738B0012118C /* EVAWalletDetailCollectionViewCell.swift */,
 			);
 			name = WalletDetail;
+			sourceTree = "<group>";
+		};
+		ECDC02621D8BA35B0066DF90 /* ReceiveEther */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC02631D8BA3840066DF90 /* EVARecieveEtherVC.swift */,
+			);
+			name = ReceiveEther;
 			sourceTree = "<group>";
 		};
 		ECE3630A1D816EAB0003F724 /* Models */ = {
@@ -267,12 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC570E141D8B738B0012118C /* EVAWalletDetailCollectionViewCell.swift in Sources */,
 				EC328E561D590FA100B5027E /* EVAWalletsCollectionViewCell.swift in Sources */,
 				ECE3630C1D816ED70003F724 /* EVAWalletModel.swift in Sources */,
 				EC328E541D590D9400B5027E /* EVAWalletsVC+CollectionView.swift in Sources */,
 				EC3363801D87F9D500DDF7C7 /* EVACreateWalletVC.swift in Sources */,
+				EC570E121D8B73200012118C /* EVAWalletDetailVC+CollectionView.swift in Sources */,
 				ECBA909A1D869AB600BD2CD8 /* EVAWalletDetailVC.swift in Sources */,
 				EC328E431D59007A00B5027E /* EVAWalletsVC.swift in Sources */,
+				ECDC02641D8BA3840066DF90 /* EVARecieveEtherVC.swift in Sources */,
 				EC328E411D59007A00B5027E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
