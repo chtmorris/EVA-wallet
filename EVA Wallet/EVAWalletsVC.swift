@@ -12,6 +12,10 @@ class EVAWalletsVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // =========
+    // LIFECYCLE
+    // =========
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +32,10 @@ class EVAWalletsVC: UIViewController {
         print(wallets)
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
+     
     override var prefersStatusBarHidden: Bool {
         get {
             return true
