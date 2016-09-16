@@ -8,18 +8,25 @@
 
 import UIKit
 
+var dummyWalletNames = ["Chuck 1", "Spending", "Chuck's Secret"]
+var dummyWalletBalance = ["12.1328", "134.1222", "111.0090"]
+
 extension EVAWalletsVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    // =======================
+    // COLLECTION VIEW METHODS
+    // =======================
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return dummyWalletNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WalletCell", for: indexPath) as? EVAWalletsCollectionViewCell
         
         cell?.configure(
-            walletName: "Wallet",
-            walletBalance: "12.123 "
+            walletName: dummyWalletNames[indexPath.row],
+            walletBalance: dummyWalletBalance[indexPath.row]
         )
         
         return cell!
@@ -29,18 +36,15 @@ extension EVAWalletsVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return CGSize(width: collectionView.bounds.width, height: 50)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let cell = collectionView.
-    }
+    
+    // =================
+    // PREPARE FOR SEGUE
+    // =================
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? EVAWalletDetailVC {
-            
-            let cell = sender as! UICollectionViewCell
-            let indexPath = self.collectionView!.indexPath(for: cell)
-            
-            vc.walletFromCollectionView = "\(indexPath?.row)"
-
+            let cell = sender as! EVAWalletsCollectionViewCell
+            vc.walletFromCollectionView = Wallet(name: cell.walletName.text!, balance: Double(cell.walletBalance.text!)!)
         }
     }
     
