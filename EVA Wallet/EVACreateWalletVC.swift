@@ -12,6 +12,11 @@ class EVACreateWalletVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
     
+    
+    // =========
+    // LIFECYCLE
+    // =========
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,21 +45,42 @@ class EVACreateWalletVC: UIViewController, UITextFieldDelegate {
     
     func createNewWallet(walletName: String) {
         
-        let defaults = UserDefaults.standard
+        dummyWalletNames.append(walletName)
+        dummyWalletBalance.append("0.0000")
         
-        guard defaults.object(forKey: "wallets") != nil else {
-            
-            // Set wallet for the first time
-            let wallets = [Wallet(name: walletName, balance: 0.0)]
-            defaults.set(wallets, forKey: "wallets")
-            return
-        }
-        
-        // Wallets already exists
-        var wallets = defaults.object(forKey: "wallets") as! [Wallet]
-        let newWallet = Wallet(name: walletName, balance: 0.0)
-        wallets.append(newWallet)
+//        let defaults = UserDefaults.standard
+//        
+//        guard defaults.object(forKey: "wallets") != nil else {
+//            
+//            // Set wallet for the first time
+//            let wallets = [Wallet(name: walletName, balance: 0.0)]
+//            defaults.set(wallets, forKey: "wallets")
+//            return
+//        }
+//        
+//        // Wallets already exists
+//        var wallets = defaults.object(forKey: "wallets") as! [Wallet]
+//        let newWallet = Wallet(name: walletName, balance: 0.0)
+//        wallets.append(newWallet)
 
     }
     
+    // =======
+    // ACTIONS
+    // =======
+    
+    @IBAction func downArrowTapped(_ sender: UIButton) {
+        textField.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func createButtonTapped(_ sender: UIButton) {
+        
+        guard textField.text != nil else {
+            return
+        }
+        
+        createNewWallet(walletName: textField.text!)
+        dismiss(animated: true, completion: nil)
+    }
 }
