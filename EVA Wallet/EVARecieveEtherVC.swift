@@ -9,17 +9,27 @@
 import UIKit
 
 class EVARecieveEtherVC: UIViewController {
-
+    
+    // =========
+    // LIFECYCLE 
+    // =========
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var prefersStatusBarHidden: Bool {
+        get {
+            return true
+        }
     }
+    
+    
+    // =======
+    // ACTIONS
+    // =======
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
